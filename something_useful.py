@@ -1,2 +1,4 @@
 for i in range(10):
-	print "hello, world", i
+	print "And another one bites the dust.."
+
+
