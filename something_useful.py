@@ -1,6 +1,9 @@
 import sys
 
-for i in range(10):
-	print "And another one bites the dust.."
+try:
+	name = sys.argv[1]
+except IndexError:
+	name = 'Micah'
 
-print "Hello ", sys.argv[1]
+print "Hello", name
+
