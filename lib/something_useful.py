@@ -4,8 +4,9 @@ import sys
 
 try:
 	name = sys.argv[1]
-except IndexError:
+except IndexError, NameError:
 	print "Usage: python something_useful.py <name>"
+	name = 'World'
 
 
 # Prints name
