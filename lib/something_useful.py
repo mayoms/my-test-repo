@@ -1,4 +1,5 @@
 import sys
+from greeter import Greeter
 
 # Try/Except for argv/c
 
@@ -9,9 +10,10 @@ except IndexError, NameError:
 	name = 'World'
 
 
+greeter = Greeter(name)
 # Prints name
 
-print "Hello", name
+print greeter.greet()
 
 
 
